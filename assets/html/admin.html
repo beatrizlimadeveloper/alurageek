@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraGeek</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/img/hq.png">
+  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/css/telaADMIN.css">
+  <link rel="stylesheet" href="/assets/css/telaAdicionarProduto.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header__inicio">
+        <a href="/index.html"><img src="/assets/img/logo.svg" alt="logo do AluraGeek" class="header__img"></a>
+        <nav class="area__pesquisa">
+          <section class="pesquisa__container" id="pesquisaContainer">
+            <input type="search" placeholder="O que deseja encontrar?" id="inputPesquisa" class="input__Pesquisa">
+            <img src="../img/lupa.svg" alt="lupa de pesquisa">
+          </section>
+          <section class="pesquisa__resultado" id="resultadoPesquisa">
+            <ul id="listaProdutosPesquisa" class="lista__produtosPesquisado"></ul>
+          </section>
+        </nav>
+      </div>
+
+
+      <button class="botao__telaADM display-none" id="btnTelaADM">Menu administrador</button>
+
+      <button id="btnPesquisa" class="botao__pesquisa"><img src="/assets/img/lupa.svg" alt="botao de pesquisa"></button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="produtos__editaveis" id="produtosEditaveis">
+      <div class="titulo__editaveis">
+        <h1>Todos Produtos</h1>
+        <Button id="botaoSectionAddProduto">Adicionar produto</Button>
+      </div>
+
+      <ul class="lista__TodosProdutos" id="listaTodosProdutos">
+      </ul>
+
+    </section>
+
+    <section class="addProduto" id="addProduto">
+      <h1> Adicionar novo produto </h1>
+
+      <div class="addProduto__input" id="addUrl">
+        <label for="produtoUrl">URL da imagem</label>
+        <input type="text" id="produtoUrl" autocomplete="off">
+      </div>
+
+      <div class="addProduto__input" id="addCategoria">
+        <label for="produtoCategoria">Categoria</label>
+        <select id="produtoCategoria" tabindex="0">
+          <option value=""></option>
+          <option value="Star Wars">Star Wars</option>
+          <option value="Consoles">Consoles</option>
+          <option value="Diversos">Diversos</option>
+        </select>
+      </div>
+
+      <div class="addProduto__input" id="addNome">
+        <label for="produtoNome">Nome do produto</label>
+        <input type="text" id="produtoNome" maxlength="22" autocomplete="off">
+      </div>
+
+      <div class="addProduto__input" id="addPreco">
+        <label for="produtoPreco">Preço do produto</label>
+        <input type="text" id="produtoPreco" autocomplete="off">
+      </div>
+
+      <textarea name="descricao do produto" id="addDescricao" cols="30" rows="10" placeholder="Descrição do produto"></textarea>
+
+      <button class="display-none" type="submit" id="botaoAddProduto">Adicionar Produto</button>
+      <button class="display-none" type="submit" id="botaoAlteraProduto">Alterar Produto</button>
+
+    </section>
+
+
+    <section class="contatos">
+      <div class="container">
+        <div class="contatos__logo"><img src="/assets/img/logo.svg" alt=""></div>
+
+        <div class="contatos__itens">
+          <a href="#">Quem somos nós</a>
+          <a href="#">Política de privacidade</a>
+          <a href="#">Programa fidelidade</a>
+          <a href="#">Nossas lojas</a>
+          <a href="#">Quero ser franqueado</a>
+          <a href="#">Anuncie aqui</a>
+        </div>
+
+        <form action="https://formsubmit.co/beatrizlima.developer@gmail.com" method="POST" />
+        <div class="contatos__email">
+          <h3>Fale conosco</h3>
+          <div class="nome__email">
+
+            <label for="nomeEmail">Nome</label>
+            <input type="text" id="nomeEmail" name="name">
+          </div>
+          <textarea name="message" id="textoEmail" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+          <button type="submit" id="btnEnviarMensagem">Enviar mensagem</button>
+
+        </div>
+        </form>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script type="module" src="/assets/js/ADM.js"></script>
+
+  <footer>
+    <div class="direitos__autorais">
+      <p>Desenvolvido por <a href="https://www.linkedin.com/in/beatrizlimadeveloper/" target="_blank">Beatriz Lima</a></p>
+      <p>2023</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

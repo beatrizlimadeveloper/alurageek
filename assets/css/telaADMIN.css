@@ -1,0 +1,107 @@
+.botao__login {
+  display: none;
+}
+
+.produtos__editaveis {
+  width: 90rem;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0;
+}
+
+.titulo__editaveis {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 16px 0;
+}
+
+.titulo__editaveis h1 {
+  color: var(--preto-100, #464646);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.titulo__editaveis button {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--azul-100, #18457f);
+  color: var(--preto-branco, #fff);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.lista__TodosProdutos {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+
+.cardADM__botoes {
+  width: 176px;
+  display: flex;
+  justify-content: end;
+  gap: 16px;
+  position: absolute;
+}
+
+.cardADM__botoes button {
+  background-color: rgba(0, 0, 0, 0.277);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cardADM__botoes button:hover {
+  background-color: rgba(0, 0, 0, 0.435);
+}
+
+@media screen and (min-width: 875px) and (max-width: 1440px) {
+  
+  .produtos__editaveis {
+  width: 98%;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0;
+}
+
+
+}
+
+
+@media screen and (max-width: 875px) {
+
+  .produtos__editaveis {
+  width: 100%;
+  padding: 32px 0;
+}
+
+.titulo__editaveis {
+  align-items: start;
+  margin: 16px;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titulo__editaveis h1 {
+  color: var(--preto-100, #464646);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.lista__TodosProdutos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+  
+}

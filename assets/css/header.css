@@ -1,0 +1,161 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 32px 0;
+  background-color: #fff;
+}
+
+header .container {
+  width: 90rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__inicio {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.area__pesquisa {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Pesquisa */
+
+.pesquisa__container {
+  width: 361px;
+  display: flex;
+  justify-content: center;
+  height: calc(40px - 16px);
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: 1px solid #8f8f8f35;
+}
+
+.input__Pesquisa {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.pesquisa__container img {
+  width: 24px;
+}
+
+.pesquisa__resultado {
+  display: none;
+  position: absolute;
+  width: calc(413px - 21px);
+  min-height: 50px;
+  top: 78px;
+  background-color: #f5f5f5;
+  border-radius: 0 0 20px 20px;
+
+  border-left: 1px solid #8f8f8f35;
+  border-right: 1px solid #8f8f8f35;
+  border-bottom: 1px solid #8f8f8f35;
+
+  z-index: 1;
+}
+
+.lista__produtosPesquisado {
+  width: 100%;
+  max-height: 365px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 5px 10px;
+}
+
+/* Fim Input Pesquisa */
+
+.botao__login {
+  min-width: 180px;
+  height: 100%;
+  border: 1px #18457f solid;
+  color: #2a7ae4;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.botao__pesquisa {
+  display: none;
+}
+
+/* Tela para tablet */
+
+@media screen and (min-width: 875px) and (max-width: 1440px) {
+  header .container {
+    width: 100%;
+    padding: 0 32px;
+    justify-content: space-around;
+  }
+
+  .pesquisa__container {
+    width: 100%;
+  }
+
+  .input__Pesquisa {
+    width: calc(100% + 303px);
+    flex-shrink: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+
+  .pesquisa__resultado {
+    max-width: 100%;
+    z-index: 1;
+  }
+
+  .botao__login {
+    max-width: 160px;
+    margin: 0 32px 0 64px;
+  }
+}
+
+/* Tela para celular */
+
+@media screen and (max-width: 875px) {
+  header {
+    padding: 18px 0;
+  }
+
+  header .container {
+    width: 100%;
+    justify-content: space-around;
+    padding: 0 10px;
+  }
+
+  .header__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .area__pesquisa {
+    display: none;
+  }
+
+  .botao__pesquisa {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  .botao__login {
+    width: 133px;
+    flex-shrink: 1;
+    margin: 6px;
+  }
+}

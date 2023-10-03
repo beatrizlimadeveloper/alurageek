@@ -1,0 +1,94 @@
+.section__banner {
+  width: 100%;
+  height: 352px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8)),
+    url(/assets/img/banner.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.section__banner .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 32px 0;
+}
+
+.banner__conteudo {
+  width: 90rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section__banner h1 {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.section__banner p {
+  font-size: 22px;
+}
+
+.section__banner button {
+  width: 130px;
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--azul-100, #18457f);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 550px) and (max-width: 1440px) {
+  .section__banner .container {
+    padding: 32px 0;
+  }
+
+  .banner__conteudo {
+    width: 100%;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .banner__conteudo {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    justify-content: end;
+  }
+
+  .section__banner {
+    height: 192px;
+  }
+
+  .section__banner .container {
+    display: flex;
+    align-items: start;
+  }
+
+  .section__banner h1 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .section__banner p {
+    font-size: 14px;
+  }
+
+  .section__banner button {
+    width: calc(159px - 32px);
+    height: calc(70px - 24px);
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}

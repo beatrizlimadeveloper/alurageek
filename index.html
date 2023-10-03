@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraGeek</title>
+  <link rel="shortcut icon" type="image/png" href="assets/img/hq.png">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="header__inicio">
+        <a href="index.html"><img src="assets/img/logo.svg" alt="logo do AluraGeek" class="header__img"></a>
+        <nav class="area__pesquisa">
+          <section class="pesquisa__container" id="pesquisaContainer">
+            <input type="search" placeholder="O que deseja encontrar?" id="inputPesquisa" class="input__Pesquisa">
+            <img src="assets/img/lupa.svg" alt="lupa de pesquisa">
+            <section class="pesquisa__resultado" id="resultadoPesquisa">
+              <ul id="listaProdutosPesquisa" class="lista__produtosPesquisado"></ul>
+            </section>
+          </section>
+        </nav>
+      </div>
+
+
+      <button class="botao__login" id="btnLogin">Login</button>
+
+      <button id="btnPesquisa" class="botao__pesquisa"><img src="assets/img/lupa.svg" alt="botao de pesquisa"></button>
+    </div>
+  </header>
+
+  <main id="startScreen">
+    <section class="section__banner" id="sectionBanner">
+      <div class="container">
+
+        <div class="banner__conteudo">
+
+          <h1 id="mesPromocao"><!-- Dezembro Promocional --></h1>
+          <p>Produtos selecionados com até 33% de desconto</p>
+          <button id="btnVerConsoles">Ver Consoles</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class=" produtos section__starwars">
+      <div class="titulo__container">
+        <h2 class="titulo__lista">Star Wars</h2>
+        <button id="btnVerTudoStarWars">Ver tudo <img src="assets/img/seta.svg" alt="icone ver tudo"></button>
+      </div>
+      <ul class="lista__produtos" id="listaStarWars"></ul>
+    </section>
+
+    <section class="produtos section__consoles">
+      <div class="titulo__container">
+        <h2 class="titulo__lista" id="tituloConsoles">Consoles</h2>
+        <button id="btnVerTudoConsoles">Ver tudo <img src="assets/img/seta.svg" alt="icone ver tudo"></button>
+      </div>
+      <ul class="lista__produtos" id="listaConsoles"></ul>
+    </section>
+
+    <section class="produtos section__diversos">
+      <div class="titulo__container">
+        <h2 class="titulo__lista">Diversos</h2>
+        <button id="btnVerTudoDiversos">Ver tudo <img src="assets/img/seta.svg" alt="icone ver tudo"></button>
+      </div>
+      <ul class="lista__produtos" id="listaDiversos"></ul>
+    </section>
+  </main>
+
+  <aside id="verProdutoContainer">
+    <section class="produto__selecionado">
+      <ul id="listaCardSelecionado">
+
+      </ul>
+
+    </section>
+
+    <section class="produto__simulares">
+      <h1>Produtos similares</h1>
+      <ul id="listaCardSimilares">
+
+      </ul>
+
+    </section>
+
+  </aside>
+
+  <section class="contatos">
+    <div class="container">
+
+      <div class="contatos__logo"><img src="assets/img/logo.svg" alt=""></div>
+
+      <div class="contatos__itens">
+        <a href="#">Quem somos nós</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Programa fidelidade</a>
+        <a href="#">Nossas lojas</a>
+        <a href="#">Quero ser franqueado</a>
+        <a href="#">Anuncie aqui</a>
+      </div>
+
+      <form action="https://formsubmit.co/beatrizlima.developer@gmail.com" method="POST" />
+      <div class="contatos__email">
+        <h3>Fale conosco</h3>
+        <div class="nome__email">
+
+          <label for="nomeEmail">Nome</label>
+          <input type="text" id="nomeEmail" name="name">
+        </div>
+        <textarea name="message" id="textoEmail" cols="30" rows="10" placeholder="Escreva sua mensagem"></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+        <button type="submit" id="btnEnviarMensagem">Enviar mensagem</button>
+
+      </div>
+      </form>
+    </div>
+
+  </section>
+
+  <script type="module" src="assets/js/main.js"></script>
+
+
+
+  <footer>
+    <div class="direitos__autorais">
+      <p>Desenvolvido por <a href="https://www.linkedin.com/in/beatrizlimadeveloper/" target="_blank">Beatriz Lima</a></p>
+      <p>2023</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
